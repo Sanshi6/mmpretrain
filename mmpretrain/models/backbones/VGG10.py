@@ -130,7 +130,7 @@ class VGG10(BaseBackbone):
         x = self.conv2(x)
         x = self.conv3(x)
         x = self.conv4(x)
-        return x
+        return (x, )
 
 
 def vgg10Legacy():
