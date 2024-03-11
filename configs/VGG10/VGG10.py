@@ -9,8 +9,8 @@ _base_ = [
 optim_wrapper = dict(paramwise_cfg=dict(norm_decay_mult=0.))
 
 # 设置 batch size
-val_dataloader = dict(batch_size=32)
-test_dataloader = dict(batch_size=32)
+val_dataloader = dict(batch_size=256)
+test_dataloader = dict(batch_size=256)
 
 # load_from = r"E:\SiamProject\mmclassification\tools\work_dirs\tracksupernet-s0_8xb32_in1k\epoch_25.pth"
 # resume = True
