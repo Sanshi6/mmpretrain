@@ -3,10 +3,10 @@ dataset_type = 'ImageNet'
 data_preprocessor = dict(
     num_classes=1000,
     # RGB format normalization parameters
-    mean=[123.675, 116.28, 103.53],
-    std=[58.395, 57.12, 57.375],
+    # mean=[123.675, 116.28, 103.53],
+    # std=[58.395, 57.12, 57.375],
     # convert image from BGR to RGB
-    to_rgb=True,
+    to_rgb=False,
 )
 
 train_pipeline = [
