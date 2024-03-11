@@ -86,10 +86,6 @@ https://github.com/open-mmlab/mmpretrain/assets/26739999/e4dcd3a2-f895-4d1b-a351
 
 ## What's new
 
-🌟 v1.0.2 was released in 15/08/2023
-
-Support [MFF](./configs/mff/) self-supervised algorithm and enhance the codebase. More details can be found in the [changelog](https://mmpretrain.readthedocs.io/en/latest/notes/changelog.html).
-
 🌟 v1.0.1 was released in 28/07/2023
 
 Fix some bugs and enhance the codebase. Please refer to [changelog](https://mmpretrain.readthedocs.io/en/latest/notes/changelog.html) for more details.
@@ -101,7 +97,13 @@ Fix some bugs and enhance the codebase. Please refer to [changelog](https://mmpr
 - Add [**iTPN**](./configs/itpn/), [**SparK**](./configs/spark/) self-supervised learning algorithms.
 - Provide examples of [New Config](./mmpretrain/configs/) and [DeepSpeed/FSDP with FlexibleRunner](./configs/mae/benchmarks/). Here are the documentation links of [New Config](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/config.html#a-pure-python-style-configuration-file-beta) and [DeepSpeed/FSDP with FlexibleRunner](https://mmengine.readthedocs.io/en/latest/api/generated/mmengine.runner.FlexibleRunner.html#mmengine.runner.FlexibleRunner).
 
-🌟 Upgrade from MMClassification to MMPreTrain
+🌟 v1.0.0rc8 was released in 22/05/2023
+
+- Support multiple **multi-modal** algorithms and inferencers. You can explore these features by the [gradio demo](https://github.com/open-mmlab/mmpretrain/tree/main/projects/gradio_demo)!
+- Add EVA-02, Dino-V2, ViT-SAM and GLIP backbones.
+- Register torchvision transforms into MMPretrain, you can now easily integrate torchvision's data augmentations in MMPretrain. See [the doc](https://mmpretrain.readthedocs.io/en/latest/api/data_process.html#torchvision-transforms)
+
+Update of previous versions
 
 - Integrated Self-supervised learning algorithms from **MMSelfSup**, such as **MAE**, **BEiT**, etc.
 - Support **RIFormer**, a simple but effective vision backbone by removing token mixer.
@@ -251,7 +253,6 @@ Results and models are available in the [model zoo](https://mmpretrain.readthedo
         <li><a href="configs/mixmim">MixMIM (arXiv'2022)</a></li>
         <li><a href="configs/itpn">iTPN (CVPR'2023)</a></li>
         <li><a href="configs/spark">SparK (ICLR'2023)</a></li>
-        <li><a href="configs/mff">MFF (ICCV'2023)</a></li>
         </ul>
       </td>
       <td>

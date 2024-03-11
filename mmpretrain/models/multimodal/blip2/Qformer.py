@@ -598,8 +598,7 @@ class BertLMHeadModel(BertPreTrainedModel):
         self.init_weights()
 
     def get_output_embeddings(self):
-        if self.cls is not None:
-            return self.cls.predictions.decoder
+        return self.cls.predictions.decoder
 
     def set_output_embeddings(self, new_embeddings):
         self.cls.predictions.decoder = new_embeddings

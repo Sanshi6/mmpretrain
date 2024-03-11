@@ -5,12 +5,14 @@ _base_ = [
     '../_base_/default_runtime.py'
 ]
 
-# schedule settings
+# schedule settings， 关闭权重衰减
 optim_wrapper = dict(paramwise_cfg=dict(norm_decay_mult=0.))
 
+# 设置 batch size
 val_dataloader = dict(batch_size=256)
 test_dataloader = dict(batch_size=256)
 
+# 自定义 EMA
 custom_hooks = [
     dict(
         type='EMAHook',

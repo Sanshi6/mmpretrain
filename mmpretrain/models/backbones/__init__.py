@@ -58,6 +58,11 @@ from .vision_transformer import VisionTransformer
 from .vit_eva02 import ViTEVA02
 from .vit_sam import ViTSAM
 from .xcit import XCiT
+from .mobiletrack import MobileTrack
+from .tracksupernet import SuperNet, SubNet
+from .ModifyRepVGG import create_RepVGG_B1, create_RepVGG_B2
+from .RepVGG10 import RepVGG10
+from .VGG10 import VGG10
 
 __all__ = [
     'LeNet5',
@@ -126,4 +131,12 @@ __all__ = [
     'HiViT',
     'SparseResNet',
     'SparseConvNeXt',
+    'MobileTrack',
+    'SuperNet',
+    'create_RepVGG_B2',
+    'create_RepVGG_B1',
+    'RepVGG10',
+    'SubNet',
+    'VGG10',
+
 ]

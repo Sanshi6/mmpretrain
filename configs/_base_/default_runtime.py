@@ -22,15 +22,15 @@ default_hooks = dict(
     visualization=dict(type='VisualizationHook', enable=False),
 )
 
-# configure environment
+# configure environment，好像是训练的时候用的
 env_cfg = dict(
     # whether to enable cudnn benchmark
     cudnn_benchmark=False,
 
-    # set multi process parameters
+    # set multi process parameters，多进程的使能
     mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0),
 
-    # set distributed parameters
+    # set distributed parameters，分布式的参数
     dist_cfg=dict(backend='nccl'),
 )
 

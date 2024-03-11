@@ -5,7 +5,7 @@ from mmcv.cnn import build_conv_layer, build_norm_layer
 from mmpretrain.registry import MODELS
 from .resnet import ResNet
 
-
+# 注册模型 @MODELS.register_module()
 @MODELS.register_module()
 class ResNet_CIFAR(ResNet):
     """ResNet backbone for CIFAR.

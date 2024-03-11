@@ -40,3 +40,7 @@ class LeNet5(BaseBackbone):
             x = self.classifier(x.squeeze())
 
         return (x, )
+
+
+
+

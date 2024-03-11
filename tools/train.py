@@ -13,7 +13,7 @@ from mmengine.utils.dl_utils import TORCH_VERSION
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a model')
-    parser.add_argument('config', help='train config file path')
+    parser.add_argument('--config', default='configs/VGG10/VGG10.py', help='train config file path')
     parser.add_argument('--work-dir', help='the dir to save logs and models')
     parser.add_argument(
         '--resume',
@@ -142,6 +142,7 @@ def merge_args(cfg, args):
 
 def main():
     args = parse_args()
+
 
     # load config
     cfg = Config.fromfile(args.config)
